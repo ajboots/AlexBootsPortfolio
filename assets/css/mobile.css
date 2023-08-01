@@ -1,0 +1,42 @@
+/* Default styles for desktop */
+/* Add your desktop styles here */
+
+/* Media query for mobile devices */
+.pattern-container {
+    display: flex;
+}
+.portfolio-section-header {
+    display: flex; justify-content: space-between;
+}
+@media only screen and (max-aspect-ratio: 1/1) {
+    /* Add your mobile styles here */
+
+    /* Example: Adjust margins and paddings */
+    .container {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    /* Example: Hide an element on mobile */
+    .hide-on-mobile {
+        display: none;
+    }
+
+    /* Example: Mobile-friendly navigation menu */
+    .mobile-menu {
+        display: block;
+        /* Show the mobile menu */
+    }
+
+    .portfolio-section-header {
+        display: block; 
+        justify-content:baseline;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    .pattern-container {
+        display: block;
+    }
+
+}
