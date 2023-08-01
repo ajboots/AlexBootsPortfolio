@@ -5,9 +5,12 @@
 .pattern-container {
     display: flex;
 }
+
 .portfolio-section-header {
-    display: flex; justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 @media only screen and (max-aspect-ratio: 1/1) {
     /* Add your mobile styles here */
 
@@ -29,8 +32,8 @@
     }
 
     .portfolio-section-header {
-        display: block; 
-        justify-content:baseline;
+        display: block;
+        justify-content: baseline;
     }
 }
 
@@ -38,5 +41,81 @@
     .pattern-container {
         display: block;
     }
+}
 
+@media only screen and (max-width: 768px) {
+    #header h1 {
+        font-size: 40px;
+        margin-top: 0px;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #profile-pic {
+        margin-left: 0px;
+    }
+
+    #canvas {
+        width: 350px;
+        height: 350px;
+    }
+
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text-number {
+        width: 50px;
+        font-size: medium;
+    }
+
+    #random {
+        font-size: 20;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #profile-pic {
+        width: 150px;
+        height: 150px;
+        margin-left: 0px;
+    }
+
+    #flex-content {
+        display: block;
+    }
+
+    #easyView-text {
+        max-width: 100%;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    .project-date {
+        margin-left: 8px;
+    }
+    #gameAI-video {
+        height: auto;
+        width: 100%;
+    }
+    #gameimg {
+        padding-left: 16px;
+        height: auto;
+        width: 100%;
+    }
+
+}
+#gameAI-video {
+    height: 280;
+}
+#gameimg {
+    padding-left: 16px;
+    height: 380px;
 }

@@ -21,7 +21,8 @@ body {
   background-color: #010e1b;
   width: 100vw;
   z-index: 1;
-  padding-top: 20px;
+  padding-top: 80px;
+  transform: translateY(-60px);
 }
 body::before {
   content: "";
@@ -33,6 +34,7 @@ body::before {
   top: 0;
   height: 100vh;
 }
+
 .black-rectangle {
   position: fixed;
   top: 0;
@@ -423,7 +425,12 @@ section .container {
 .about-me .content p:last-child {
   margin-bottom: 0;
 }
-
+#flex-content {
+  display: flex;
+}
+#easyView-text {
+  max-width: 55%;
+}
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/

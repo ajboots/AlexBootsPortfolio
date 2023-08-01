@@ -98,7 +98,7 @@
           <ul class="menu">
             <li><span></span></a></li>
             <li class="linkItem"><a class="menuItem" href="#head"><span>Home</span></a></li>
-            <li class="linkItem"><a class="menuItem" href="#about"><span>About</span></a></li>
+            <li class="linkItem"><a class="menuItem" href="#profile-pic"><span>About</span></a></li>
             <li class="linkItem"><a class="menuItem" href="#projects"><span>Projects</span></a></li>
             <li class="linkItem"><a class="menuItem" href="#art"><span>Artwork</span></a></li>
             <li class="resume"> <a class="resume"
@@ -118,10 +118,10 @@
     <div class="col-lg-12" data-aos="fade-up">
       <div style="border: 1px solid white; margin: 20px 0;"></div>
     </div>
-    <div class="row">
+    <div id="about-section">
 
       <div class="col-lg-4" data-aos="fade-right">
-        <img id="about" src="assets/img/profile.png" class="img-fluid" alt="" style="margin-left: 30px;">
+        <img id="profile-pic" src="assets/img/profile.png" class="img-fluid" alt="">
       </div>
       <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
         <p>Passionate and creative developer driven to innovate.
@@ -131,22 +131,37 @@
           I'm always eager to collaborate with others and learn.
           <!--make more unique, maybe add sometimg about soft skills/ communication/ teamwork-->
         </p>
-        <div class="row">
-          <div class="col-lg-16">
-            <ul>
-              <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> alexjboots@gmail.com</li>
-              <li><i class="icofont-rounded-right"></i> <strong>Education:</strong>
+        <div id="profile-arrows" class="col-lg-16">
+          <ul>
+            <div style="display: flex;">
+              <i class="icofont-rounded-right " id="green-arrow"></i>
+              <li><strong>Email:</strong> alexjboots@gmail.com</li>
+            </div>
+            <div style="display: flex;">
+              <i class="icofont-rounded-right " id="green-arrow"></i>
+              <li> <strong>Education:</strong>
                 Bachelor of Science in Computer Science with Honors - NC State University</li>
-              <li><i class="icofont-rounded-right"></i> <strong>Primary Languages: </strong> C, C++, C#, Bash, Dart,
+            </div>
+            <div style="display: flex;">
+              <i class="icofont-rounded-right " id="green-arrow"></i>
+              <li> <strong>Primary Languages: </strong> C, C++,
+                C#,
+                Bash, Dart,
                 Rust, JavaScript</li>
-
-              <li><i class="icofont-rounded-right"></i> <strong>Skills: </strong> Academic Research, Game Development,
+            </div>
+            <div style="display: flex;">
+              <i class="icofont-rounded-right " id="green-arrow"></i>
+              <li> <strong>Skills: </strong> Academic Research,
+                Game Development,
                 Mobile Development, Data Visualization</li>
-              <li><i class="icofont-rounded-right"></i> <strong>Tools: </strong> Blender, Unity, Unreal, Git, AWS,
+            </div>
+            <div style="display: flex;">
+              <i class="icofont-rounded-right " id="green-arrow"></i>
+              <li> <strong>Tools: </strong> Blender, Unity, Unreal,
+                Git, AWS,
                 Docker, MySQL, Linux, Windows</li>
-
-            </ul>
-          </div>
+            </div>
+          </ul>
         </div>
 
       </div>
@@ -250,27 +265,31 @@
               </div>
               <h5 style="text-align:left;">NC State University: January 2022 - May 2023</h5>
             </div>
-            <iframe height="250vh" width="40%" src="https://youtube.com/embed/2RIcpIvzpNU" frameborder="0"
-              allowfullscreen style="float: right;"></iframe>
-            <div style="display: flex;">
-              <h4 style="text-align:left;"> </h4>
-              <h4 style="text-align:left; margin-left: 8px;"><a href="https://github.com/Xuhpclab/flame-graph-3d"
-                  style="color:#12d640">EasyView&nbsp;</a><br> </h4>
-              <a href="https://github.com/Xuhpclab/flame-graph-3d" target="_blank" class="github"><i class="github"></i>
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" />
-                </svg>
-              </a>
+            <div id="flex-content">
+              <div id="easyView-text">
+                <div style="display: flex; ">
+                  <h4 style="text-align:left;"> </h4>
+                  <h4 style="text-align:left; margin-left: 8px;"><a href="https://github.com/Xuhpclab/flame-graph-3d"
+                      style="color:#12d640; ;">EasyView&nbsp;</a><br> </h4>
+                  <a href="https://github.com/Xuhpclab/flame-graph-3d" target="_blank" class="github"><i
+                      class="github"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z" />
+                    </svg>
+                  </a>
+                </div>
+                <p style="max-width: 85%; margin-left: 18px;">The first of its kind, EasyView is an innovative 3D flame
+                  graph
+                  data visualization tool. This project
+                  is a showcase of my skill in end to end devevlopment.
+                  I created this project from ideas brainstormed in Blender, to a JavaScript prototype,
+                  a Rust delpoyment, and an international conference presentation.
+                </p>
+              </div>
+              <iframe id="easyviewvid" height="250vh" width="100%" src="https://youtube.com/embed/2RIcpIvzpNU"
+                frameborder="0" allowfullscreen></iframe>
             </div>
-            <p style="max-width: 55%; margin-left: 18px;">The first of its kind, EasyView is an innovative 3D flame
-              graph
-              data visualization tool. This project
-              is a showcase of my skill in end to end devevlopment.
-              I created this project from ideas brainstormed in Blender, to a JavaScript prototype,
-              a Rust delpoyment, and an international conference presentation.
-
-            </p>
             <div style="display: flex;">
               <h5 style="margin-left: 16px;"><a
                   href="https://drive.google.com/file/d/1bGNQlcIzGjehY4UVHT-UTR1eqTQ2niOB/view?usp=sharing">
@@ -296,11 +315,11 @@
               Passion project turned art exibition at NC State's James B. Hunt Jr.
               Library.
             </p>
-            <div class="pattern-container" >
+            <div class="pattern-container">
               <div style="width: 60%;">
-                <canvas id="canvas" width=550px; height="550px"></canvas>
+                <canvas id="canvas" width=550; height="550px"></canvas>
               </div>
-              <fieldset class="pattern-options" style="height: 490px; transform: translateY(30px);">
+              <fieldset class="pattern-options" style="height: 80%; transform: translateY(30px);">
                 <legend class="option-title">Pattern parameters</legend>
                 <div style="display: flex;">
                   <div class="checkbox" style="display: flex;  transform: translateY(10px);">
@@ -310,8 +329,7 @@
                     <p>&nbsp;</p>
                     <p class="text">Ball</p>
                   </div>
-                  <p>&emsp;&emsp;</p>
-                  <div class="checkbox" style="display: flex; transform: translateY(10px);">
+                  <div class="checkbox" style="display: flex; transform: translateY(10px); margin-left: 5px;">
                     <input type="checkbox" id="Reverse" />
                     <label for="Reverse" class="toggle"
                       style="margin: auto; transform: translateY(-10px);"><span></span></label>
@@ -327,47 +345,42 @@
                 <div>
                   <input class="range" type="range" id="TotalArcs" name="TotalArcs" min="1" max="250" value="150"
                     step="1">
-                  <input class="text-number" type="number" id="ArcCount" name="ArcCount" value="150"
-                    style="width:100px;">
+                  <input class="text-number" type="number" id="ArcCount" name="ArcCount" value="150">
                   <label class="text" for="TotalArcs">Arc Count</label>
                 </div>
                 <div>
                   <input class="range" type="range" id="Arc1Speed" name="Arc1Speed" min="-16" max="16" value="12"
                     step="2">
-                  <input class="text-number" type="number" id="Arc1Num" name="Arc1Num" value="12" style="width:100px;">
+                  <input class="text-number" type="number" id="Arc1Num" name="Arc1Num" value="12">
                   <label class="text" for="Arc1Speed">Angular Velocity 1</label>
                 </div>
                 <div>
                   <input class="range" type="range" id="Arc2Speed" name="Arc2Speed" min="-16" max="16" value="-4"
                     step="2">
-                  <input class="text-number" type="number" id="Arc2Num" name="Arc2Num" value="-4" style="width:100px;">
+                  <input class="text-number" type="number" id="Arc2Num" name="Arc2Num" value="-4">
                   <label class="text" for="Arc2Speed">Angular Velocity 2</label>
                 </div>
-                <p class="text">Color Settings</p>
                 <div>
                   <input class="range" type="range" id="ColorGradient" name="ColorGradient" min="-720" max="720"
                     value="-200" step="1">
-                  <input class="text-number" type="number" id="ColorGradientNum" name="ColorGradientNum" value="-200"
-                    style="width:100px;">
+                  <input class="text-number" type="number" id="ColorGradientNum" name="ColorGradientNum" value="-200">
                   <label class="text" for="ColorGradient">Color Change</label>
                 </div>
                 <div>
                   <input class="range" type="range" id="ColorShift" name="ColorShift" min="0" max="360" value="50"
                     step="1">
-                  <input class="text-number" type="number" id="ColorShiftNum" name="ColorShiftNum" value="50"
-                    style="width:100px;">
+                  <input class="text-number" type="number" id="ColorShiftNum" name="ColorShiftNum" value="50">
                   <label class="text" for="ColorShift">Starting Color</label>
                 </div>
                 <div>
                   <input class="range" type="range" id="PulseColor" name="PulseColor" min="0" max="10" value=".5"
                     step=".1">
-                  <input class="text-number" type="number" id="PulseColorNum" name="PulseColorNum" value=".5"
-                    style="width:100px;">
+                  <input class="text-number" type="number" id="PulseColorNum" name="PulseColorNum" value=".5">
                   <label class="text" for="ColorPulse">Pulse Color</label>
                 </div>
               </fieldset>
             </div>
-            <div style="border: 1px solid white; margin: 20px 0;"></div>
+            <div style="border: 1px solid white; margin: 20px 0; margin-top: 50px;"></div>
           </div>
           <div id="PinballWizard">
             <div class="portfolio-section-header">
@@ -384,10 +397,10 @@
                   </div></a>
                 </div>
               </div>
-              <h5 style="text-align:left;">NC State University: January 2023 - May 2023</h5>
+              <h5 class="project-date" style="text-align:left;">NC State University: January 2023 - May 2023</h5>
             </div>
 
-            <p style="text-align:left; margin-left: 18px; max-width: 70%;">
+            <p id="wizard-text" style="text-align:left; margin-left: 18px; max-width: 80%;">
               Cross paltform Flutter project utilizing CICD and AWS.
               Users authenticated with Firebase could play games at local machines and tap an NFC chip to upload their
               scores.
@@ -412,11 +425,11 @@
             <p style="text-align:left; margin-left: 18px; max-width: 70%;">
               Visualizations created with my own custom C++ game engine
             </p>
-            <div style="display: flex;">
-              <video width="470" height="260" autoplay muted loop>
+            <div id="flex-content">
+              <video id="gameAI-video" height="280" autoplay muted loop>
                 <source src="./assets/img/Boids.mp4" type="video/mp4">
               </video>
-              <video width="566" height="260" autoplay muted loop>
+              <video id="gameAI-video" height="280" autoplay muted loop>
                 <source src="./assets/img/AStarCompressed.mp4" type="video/mp4">
               </video>
 
@@ -434,28 +447,27 @@
             </div>
 
             <div style="width: 100%; display: flex;">
-              <div style="width: 50%;">
+              <div id="flex-content" style="width: 50%;">
                 <h5 style="text-align:left; margin-left: 18px;"><a
                     href="https://bootswithfur.itch.io/pinfinity">Pinfinity</a><br></h5>
                 <p style="text-align:left; margin-left: 18px; width: 80%;">
-                  Infinite scrolling pinball! Lead programmer and artist in a team of three. Published to the Google Play
+                  Infinite scrolling pinball! Lead programmer and artist in a team of three. Published to the Google
+                  Play
                   Store.<br>
                   <br><a href="https://bootswithfur.itch.io/pinfinity">Play on Itch.io
                 </p>
-                <img style="padding-left: 16px;" height="380px" src="./assets/img/project/Pinfinity-game.png"></img>
-                <img style="padding-left: 16px;" height="380px"
-                  src="./assets/img/project/Pinfinity-game-over.png"></img></a>
+                <img id="gameimg" src="./assets/img/project/Pinfinity-game.png"></img>
+                <img id="gameimg" src="./assets/img/project/Pinfinity-game-over.png"></img></a>
               </div>
               <div style="width: 50%;">
                 <h5 style="text-align:left; margin-left: 18px;"><a href="https://bootswithfur.itch.io/pinfinity">Goblin
                     Crashers</a><br></h5>
                 <p style="text-align:left; margin-left: 18px; width: 80%;">
-                  Inversion of the tower defense genre. Created in 48 hours as a part of the 2023 GMTK game jam. <br>
+                  Inversion of the tower defense genre. Created in 48 hours as a part of the 2023 GMTK game jam. <br><br>
                   <br><a href="https://bootswithfur.itch.io/pinfinity">Play on Itch.io
                 </p>
-                <img style="padding-left: 16px;" height="380px" src="./assets/img/project/GoblinCrashers.png"></img>
-                <img style="padding-left: 16px;" height="380px"
-                  src="./assets/img/project/GoblinCrashers-game.png"></img></a>
+                <img id="gameimg" src="./assets/img/project/GoblinCrashers.png"></img>
+                <img id="gameimg" src="./assets/img/project/GoblinCrashers-game.png"></img></a>
               </div>
             </div>
           </div>
@@ -474,8 +486,7 @@
               <img style="padding: 1%;" width="31.5%" src="./assets/img/blender/Dragon.png"></img>
             </div>
             <div style="width: 100%; display: flex; margin-left: 20px;">
-              <img style=" padding: 1%; width: 58%;  "
-                src="./assets/img/blender/forggiLighting.gif" alt="GIF">
+              <img style=" padding: 1%; width: 58%;  " src="./assets/img/blender/forggiLighting.gif" alt="GIF">
               <img style="padding: .8%; width:39.5%; " src="./assets/img/project/doughnut.png" alt="x">
               </img>
             </div>
@@ -500,8 +511,8 @@
     <div class="section-title">
       <h2>Resume & Links</h2>
     </div>
-    <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-      style=" display: flex; justify-content: space-between;">
+    <div id="flex-content" class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
+      style=" justify-content: space-between;">
       <h3 class="title"><a href="https://drive.google.com/file/d/1SZ36gc8_tKvJWGhaExdoPrYlUu1_H0aJ/view?usp=sharing"
           target="_blank">Resume <class="icon"><i class="icofont-page"></i></a></h3>
       <h3>alexjboots@gmail.com</h3>
