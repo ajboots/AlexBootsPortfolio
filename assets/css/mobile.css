@@ -49,6 +49,11 @@
     padding-left: 16px;
     height: 380px;
 }
+#gallery-row {
+    width: 100%; 
+    display: flex; 
+    margin-left: 20px;
+}
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 30px;
@@ -85,6 +90,9 @@
     #random {
         font-size: 20;
         width: 100%;
+    }
+    #gallery-row {
+        margin-left: 0px;
     }
 
     input::-webkit-outer-spin-button,
