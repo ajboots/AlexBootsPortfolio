@@ -287,8 +287,8 @@
                   a Rust delpoyment, and an international conference presentation.
                 </p>
               </div>
-              <iframe id="easyviewvid" height="250vh" width="100%" src="https://youtube.com/embed/2RIcpIvzpNU"
-                frameborder="0" allowfullscreen></iframe>
+              <iframe id="easyviewvid" width="100%" src="https://youtube.com/embed/2RIcpIvzpNU" frameborder="0"
+                allowfullscreen></iframe>
             </div>
             <div style="display: flex;">
               <h5 style="margin-left: 16px;"><a
@@ -321,22 +321,26 @@
               </div>
               <fieldset class="pattern-options" style="height: 80%; transform: translateY(30px);">
                 <legend class="option-title">Pattern parameters</legend>
-                <div style="display: flex;">
-                  <div class="checkbox" style="display: flex;  transform: translateY(10px);">
-                    <input type="checkbox" id="Ball" />
-                    <label for="Ball" class="toggle"
-                      style="margin: auto; transform: translateY(-10px);"><span></span></label>
-                    <p>&nbsp;</p>
-                    <p class="text">Ball</p>
+                <div style="display: flex; width: 100%;">
+                  <div id="flex-content" style="width: 100%;">
+                    <input id="random" type="button" value="Randomize" onclick="Randomize();" />
+                    <div style="display: flex;">
+                      <div class="checkbox" style="display: flex;  transform: translateY(10px);">
+                        <input type="checkbox" id="Ball" />
+                        <label for="Ball" class="toggle"
+                          style="margin: auto; transform: translateY(-10px);"><span></span></label>
+                        <p>&nbsp;</p>
+                        <p class="text">Ball</p>
+                      </div>
+                      <div class="checkbox" style="display: flex; transform: translateY(10px); margin-left: 5px;">
+                        <input type="checkbox" id="Reverse" />
+                        <label for="Reverse" class="toggle"
+                          style="margin: auto; transform: translateY(-10px);"><span></span></label>
+                        <p>&nbsp;</p>
+                        <p class="text">Reverse</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="checkbox" style="display: flex; transform: translateY(10px); margin-left: 5px;">
-                    <input type="checkbox" id="Reverse" />
-                    <label for="Reverse" class="toggle"
-                      style="margin: auto; transform: translateY(-10px);"><span></span></label>
-                    <p>&nbsp;</p>
-                    <p class="text">Reverse</p>
-                  </div>
-                  <input id="random" type="button" value="Randomize" onclick="Randomize();" />
                 </div>
                 <div style="padding-top: 10px;"></div>
                 <p class="text">Pattern Settings</p>
@@ -447,7 +451,7 @@
             </div>
 
             <div style="width: 100%; display: flex;">
-              <div id="flex-content" style="width: 50%;">
+              <div style="width: 50%;">
                 <h5 style="text-align:left; margin-left: 18px;"><a
                     href="https://bootswithfur.itch.io/pinfinity">Pinfinity</a><br></h5>
                 <p style="text-align:left; margin-left: 18px; width: 80%;">
@@ -463,7 +467,8 @@
                 <h5 style="text-align:left; margin-left: 18px;"><a href="https://bootswithfur.itch.io/pinfinity">Goblin
                     Crashers</a><br></h5>
                 <p style="text-align:left; margin-left: 18px; width: 80%;">
-                  Inversion of the tower defense genre. Created in 48 hours as a part of the 2023 GMTK game jam. <br><br>
+                  Inversion of the tower defense genre. Created in 48 hours as a part of the 2023 GMTK game jam.
+                  <br>
                   <br><a href="https://bootswithfur.itch.io/pinfinity">Play on Itch.io
                 </p>
                 <img id="gameimg" src="./assets/img/project/GoblinCrashers.png"></img>

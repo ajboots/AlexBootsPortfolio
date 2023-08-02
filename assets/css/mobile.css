@@ -42,14 +42,20 @@
         display: block;
     }
 }
-
+#gameAI-video {
+    height: 280;
+}
+#gameimg {
+    padding-left: 16px;
+    height: 380px;
+}
 @media only screen and (max-width: 768px) {
-    #header h1 {
-        font-size: 40px;
+    h1 {
+        font-size: 30px;
         margin-top: 0px;
         padding: 0;
         line-height: 1;
-        font-weight: 700;
+        font-weight: 350;
         font-family: "Poppins", sans-serif;
     }
 
@@ -58,15 +64,19 @@
     }
 
     #canvas {
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
     }
-
+    .text{
+        font-size: 15px;
+    }
     body {
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    .range {
+        width: 80px;
+    }
     .text-number {
         width: 50px;
         font-size: medium;
@@ -74,6 +84,7 @@
 
     #random {
         font-size: 20;
+        width: 100%;
     }
 
     input::-webkit-outer-spin-button,
@@ -107,15 +118,8 @@
     }
     #gameimg {
         padding-left: 16px;
-        height: auto;
+        height: unset;
         width: 100%;
     }
 
-}
-#gameAI-video {
-    height: 280;
-}
-#gameimg {
-    padding-left: 16px;
-    height: 380px;
 }
