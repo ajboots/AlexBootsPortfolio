@@ -68,7 +68,7 @@
   <!-- ======= Header ======= -->
   <header class="header-tops">
     <div class="container">
-      <div id="headerName">
+      <div id="headerName" style="margin-bottom: 20px;">
         <div style="display: flex;">
           <h1><a href="index.html" style="color:#fff; ">Alex Boots,&nbsp;</a></h1>
           <h1 style="color:#fff"><span class="typing" style="color:#12D640; "></span></h2>
@@ -93,7 +93,9 @@
                 d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z" />
             </svg>
           </a>
+          <div style="height: 10px;"></div>
         </div>
+        
         <nav class="nav-menu d-none d-lg-block">
           <ul class="menu">
             <li><span></span></a></li>
@@ -609,13 +611,13 @@
     const verticalOffset = -20;
     window.addEventListener('scroll', function () {
       const scrollPosition = window.scrollY;
-      const newMarginTop = Math.max(10, 200 - scrollPosition / 4.5);
+      const newMarginTop = Math.max(10, 200 - scrollPosition / 3);
       headerName.style.marginTop = verticalOffset + newMarginTop + 'px';
       const newLineSpacing = Math.max(1, 4 + newMarginTop / -100); // You can adjust the 500 to control the rate of change
       navMenu.style.lineHeight = newLineSpacing;
     });
     const scrollPosition = window.scrollY;
-    const newMarginTop = Math.max(10, 200 - scrollPosition / 4.5);
+    const newMarginTop = Math.max(10, 200 - scrollPosition / 3);
     headerName.style.marginTop = verticalOffset + newMarginTop + 'px';
     const newLineSpacing = Math.max(1, 4 + newMarginTop / -100); // You can adjust the 500 to control the rate of change
     navMenu.style.lineHeight = newLineSpacing;
