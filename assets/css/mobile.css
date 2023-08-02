@@ -123,9 +123,10 @@
     #gameAI-video {
         height: auto;
         width: 100%;
+        transform: translateX(-5px);
     }
     #gameimg {
-        padding-left: 16px;
+        padding-left: 0px;
         height: unset;
         width: 100%;
     }
