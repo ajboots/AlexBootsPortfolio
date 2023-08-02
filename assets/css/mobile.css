@@ -54,6 +54,12 @@
     display: flex; 
     margin-left: 20px;
 }
+.game-section {
+    width: 50%;
+}
+.comic-panel {
+    width: 50%;
+}
 @media only screen and (max-width: 768px) {
     h1 {
         font-size: 30px;
@@ -77,6 +83,7 @@
     }
     body {
         margin-right: 5%;
+        margin-left: 0%;
     }
     .range {
         width: 80px;
@@ -103,7 +110,9 @@
     #profile-pic {
         width: 150px;
         height: 150px;
-        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
 
     #flex-content {
@@ -125,9 +134,19 @@
         transform: translateX(-5px);
     }
     #gameimg {
-        padding-left: 0px;
+        padding-left: 16px;
         height: unset;
+        width: 40%;
+        
+    }
+    .game-section {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    .game-images{ 
+        display: flex;
+    }
+    .comic-panel {
         width: 100%;
     }
-
 }
